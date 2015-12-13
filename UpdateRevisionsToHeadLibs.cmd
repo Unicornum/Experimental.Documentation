@@ -10,6 +10,9 @@ set UrlToAlicornInclude=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/inc
 set PathToTesting=./Testing
 set UrlToTesting=https://svn/svn/Libs/trunk/Solution/Solution/Testing
 
+set PathToDoxygen=./Documentation/Doxygen
+set UrlToDoxygen=https://svn/svn/Libs/trunk/Solution/Solution/Documentation/Doxygen
+
 set PathToExternals=./Externals
 set UrlToExternals=https://svn/svn/Libs/trunk/Solution/Solution/Externals
 
@@ -25,6 +28,7 @@ del %SvnExternals%
 
 echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% >> %SvnExternals%
 echo %PathToTesting% -r %LibsHeadRevision% %UrlToTesting% >> %SvnExternals%
+echo %PathToDoxygen% -r %LibsHeadRevision% %UrlToDoxygen% >> %SvnExternals%
 echo %PathToExternals% -r %LibsHeadRevision% %UrlToExternals% >> %SvnExternals%
 
 rem ====== Установка свойств/обновление ревизии ======
