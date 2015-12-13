@@ -7,6 +7,9 @@ set UrlToLibs="https://svn/svn/Libs/trunk"
 set PathToAlicornInclude=./Alicorn/include
 set UrlToAlicornInclude=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/include
 
+set PathToTesting=./Testing
+set UrlToTesting=https://svn/svn/Libs/trunk/Solution/Solution/Testing
+
 set PathToExternals=./Externals
 set UrlToExternals=https://svn/svn/Libs/trunk/Solution/Solution/Externals
 
@@ -21,6 +24,7 @@ rem ====== ‘ормирование списка папок дл€ обновлени€ ревизии ======
 del %SvnExternals%
 
 echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% >> %SvnExternals%
+echo %PathToTesting% -r %LibsHeadRevision% %UrlToTesting% >> %SvnExternals%
 echo %PathToExternals% -r %LibsHeadRevision% %UrlToExternals% >> %SvnExternals%
 
 rem ====== ”становка свойств/обновление ревизии ======

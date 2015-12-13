@@ -9,6 +9,7 @@
     <Import Project="Externals\Test\Google Test\GoogleTest.props" />
     <Import Project="Externals\GUI\GUI.props" />
     <Import Project="Alicorn\Lib.props" />
+    <Import Project="Testing\Testing.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
