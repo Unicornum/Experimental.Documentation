@@ -4,7 +4,7 @@ set SvnExternals=.\svn.externals
 
 set UrlToLibs="https://svn/svn/Libs/trunk"
 
-set PathToAlicornInclude=./Alicorn/include
+set PathToAlicornInclude=./include
 set UrlToAlicornInclude=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/include
 
 set PathToTesting=./Testing
@@ -26,12 +26,19 @@ rem ====== Формирование списка папок для обновления ревизии ======
 
 del %SvnExternals%
 
-echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% >> %SvnExternals%
+rem ====== Установка свойств/обновление ревизии ======
+
+rem echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% >> %SvnExternals%
+
+rem svn propset svn:externals -F%SvnExternals% ./Externals/Alicorn
+
+del %SvnExternals%
+
+rem ====== Установка свойств/обновление ревизии ======
+
 echo %PathToTesting% -r %LibsHeadRevision% %UrlToTesting% >> %SvnExternals%
 echo %PathToDoxygen% -r %LibsHeadRevision% %UrlToDoxygen% >> %SvnExternals%
 echo %PathToExternals% -r %LibsHeadRevision% %UrlToExternals% >> %SvnExternals%
-
-rem ====== Установка свойств/обновление ревизии ======
 
 svn propset svn:externals -F%SvnExternals% ./Externals
 
