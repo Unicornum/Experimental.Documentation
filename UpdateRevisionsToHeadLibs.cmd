@@ -28,9 +28,9 @@ del %SvnExternals%
 
 rem ====== Установка свойств/обновление ревизии ======
 
-rem echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% >> %SvnExternals%
+echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% >> %SvnExternals%
 
-rem svn propset svn:externals -F%SvnExternals% ./Externals/Alicorn
+svn propset svn:externals -F%SvnExternals% ./Externals/Alicorn
 
 del %SvnExternals%
 
