@@ -13,6 +13,9 @@ set UrlToAlicornLib=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/lib
 set PathToTesting=./Testing
 set UrlToTesting=https://svn/svn/Libs/trunk/Solution/Solution/Testing
 
+set PathToProperties=./Properties
+set UrlToProperties=https://svn/svn/Libs/trunk/Solution/Solution/Properties
+
 set PathToDoxygen=./Documentation/Doxygen
 set UrlToDoxygen=https://svn/svn/Libs/trunk/Solution/Solution/Documentation/Doxygen
 
@@ -44,6 +47,7 @@ rem ====== Установка свойств/обновление ревизии ======
 
 echo %PathToTesting% -r %LibsHeadRevision% %UrlToTesting% >> %SvnExternals%
 echo %PathToDoxygen% -r %LibsHeadRevision% %UrlToDoxygen% >> %SvnExternals%
+echo %PathToProperties% -r %LibsHeadRevision% %UrlToProperties% >> %SvnExternals%
 echo %PathToExternals% -r %LibsHeadRevision% %UrlToExternals% >> %SvnExternals%
 
 svn propset svn:externals -F%SvnExternals% ./Externals
