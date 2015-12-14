@@ -25,9 +25,11 @@ for /F "Delims=" %%I In (
 	'svn info --show-item=revision %UrlToLibs% --revision HEAD'
 ) do set LibsHeadRevision=%%~I
 
+echo Update to revision %LibsHeadRevision%
+
 rem ====== ‘ормирование списка папок дл€ обновлени€ ревизии ======
 
-del %SvnExternals%
+if exist %SvnExternals% del %SvnExternals%
 
 rem ====== ”становка свойств/обновление ревизии ======
 
@@ -47,5 +49,3 @@ echo %PathToExternals% -r %LibsHeadRevision% %UrlToExternals% >> %SvnExternals%
 svn propset svn:externals -F%SvnExternals% ./Externals
 
 del %SvnExternals%
-
-pause
