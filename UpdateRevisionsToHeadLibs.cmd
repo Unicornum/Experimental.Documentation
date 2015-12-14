@@ -7,6 +7,9 @@ set UrlToLibs="https://svn/svn/Libs/trunk"
 set PathToAlicornInclude=./include
 set UrlToAlicornInclude=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/include
 
+set PathToAlicornLib=./lib
+set UrlToAlicornLib=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/lib
+
 set PathToTesting=./Testing
 set UrlToTesting=https://svn/svn/Libs/trunk/Solution/Solution/Testing
 
@@ -29,6 +32,7 @@ del %SvnExternals%
 rem ====== Установка свойств/обновление ревизии ======
 
 echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% >> %SvnExternals%
+echo %PathToAlicornLib% -r %LibsHeadRevision% %UrlToAlicornLib% >> %SvnExternals%
 
 svn propset svn:externals -F%SvnExternals% ./Externals/Alicorn
 
