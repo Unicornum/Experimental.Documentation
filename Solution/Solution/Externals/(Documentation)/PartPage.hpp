@@ -3,21 +3,22 @@
 * \dir Solution\Solution\Externals
 *  ѕапка раздела внешних библиотек.
 *  
-* \page ExternalsPartPage –аздел Externals
+* \page ExternalsPage –аздел Externals
 *  
-* \section sExternalsPartBrief ¬ведение
+* \section sExternalsBrief ¬ведение
 *  –аздел внешних библиотек, добавленный как свойство svn:externals.
 *  
-* \section sExternalsPartDetails ѕодробное описание раздела
+* \section sExternalsDetails ѕодробное описание раздела
 *  
 *  ### ѕодключение внешних библиотек к решению
 *  - ƒобавить папке .../Solution/Solution свойство \b svn:externals с именем
-*  папки \b Externals и url https://svn/svn/externals/trunk/Externals
-*  (номер ревизии установить €вным образом, если требуетс€ ссылка на
-*  конкретную версию библиотек).
+*  папки \b Externals и url 
+*  https://svn/svn/externals/trunk/Solution/Solution/Externals (номер ревизии 
+*  установить €вным образом, если требуетс€ ссылка на конкретную версию 
+*  библиотек).
 *  - ќбновить рабочую копию решени€.
 *  - ѕодключить к Solution.props файл свойств 
-*  .../Solution/Solution/Externals/Common.props, если требуетс€ использование
+*  .../Solution/Solution/Externals/Externals.props, если требуетс€ использование
 *  всех библиотек или конкретные файлы Lib.props в папках библиотек, дл€
 *  использовани€ только этих библиотек.
 *  
@@ -30,6 +31,6 @@
 *  ѕредназначен дл€ хранени€ в одном месте ссылок на используемые библиотеки
 *  и простого подключени€ этих библиотек к решению.
 *  - —одержит ссылки (svn:externals) на используемые библиотеки.
-*  - ‘айл UpdateRevisionsToHeadLibs.cmd при запуске обновл€ет номера ревизий
+*  - ѕроетк UpdateRevisionsToHeadLibs при построении обновл€ет номера ревизий
 *  всех свойств на HEAD ревизию из репозитори€ Libs.
 */

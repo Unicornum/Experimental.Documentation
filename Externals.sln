@@ -5,6 +5,17 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UpdateRevisionToHeadLibs", "Solution\Solution\UpdateRevisionToHeadLibs\UpdateRevisionToHeadLibs.vcxproj", "{8B29D48C-7FE0-4393-9510-6A179434D9A1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{9BB434A1-9F08-4239-A4E5-DD80D7A16557}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UpdateRevisionToHeadLibs", "UpdateRevisionToHeadLibs", "{1FF4CE86-FCA1-4FAF-B80E-1B20FA118665}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Externals", "Externals", "{95954F90-9DA2-4924-9A18-5A4CE3632A90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Documentation)", "(Documentation)", "{7F0822C7-DC0F-417F-8709-E26C8155318F}"
+	ProjectSection(SolutionItems) = preProject
+		Solution\Solution\Externals\(Documentation)\PartPage.hpp = Solution\Solution\Externals\(Documentation)\PartPage.hpp
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -18,5 +29,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B29D48C-7FE0-4393-9510-6A179434D9A1} = {1FF4CE86-FCA1-4FAF-B80E-1B20FA118665}
+		{1FF4CE86-FCA1-4FAF-B80E-1B20FA118665} = {9BB434A1-9F08-4239-A4E5-DD80D7A16557}
+		{95954F90-9DA2-4924-9A18-5A4CE3632A90} = {9BB434A1-9F08-4239-A4E5-DD80D7A16557}
+		{7F0822C7-DC0F-417F-8709-E26C8155318F} = {95954F90-9DA2-4924-9A18-5A4CE3632A90}
 	EndGlobalSection
 EndGlobal
