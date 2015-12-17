@@ -34,11 +34,11 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\Externals\Properties\Common.props" />
+    <Import Project="..\Externals\Externals.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\Externals\Properties\Common.props" />
+    <Import Project="..\Externals\Externals.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -61,8 +61,59 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>cd..
-UpdateRevisionsToHeadLibs.cmd
+      <Command>@echo off
+
+set SvnExternals=.\svn.externals
+
+set UrlToLibs="https://svn/svn/Libs/trunk"
+
+set PathToAlicornInclude=./include
+set UrlToAlicornInclude=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/include
+
+set PathToAlicornLib=./lib
+set UrlToAlicornLib=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/lib
+
+set PathToTesting=./Testing
+set UrlToTesting=https://svn/svn/Libs/trunk/Solution/Solution/Testing
+
+set PathToProperties=./Properties
+set UrlToProperties=https://svn/svn/Libs/trunk/Solution/Solution/Properties
+
+set PathToExternals=./Externals
+set UrlToExternals=https://svn/svn/Libs/trunk/Solution/Solution/Externals
+
+rem ====== HEAD ревизия для Libs ======
+
+for /F "Delims=" %%I In (
+	'svn info --show-item=revision %UrlToLibs% --revision HEAD'
+) do set LibsHeadRevision=%%~I
+
+echo Update to revision %LibsHeadRevision%
+
+rem ====== Формирование списка папок для обновления ревизии ======
+
+cd..
+
+if exist %SvnExternals% del %SvnExternals%
+
+rem ====== Установка свойств/обновление ревизии ======
+
+echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% &gt;&gt; %SvnExternals%
+echo %PathToAlicornLib% -r %LibsHeadRevision% %UrlToAlicornLib% &gt;&gt; %SvnExternals%
+
+svn propset svn:externals -F%SvnExternals% ./Externals/Alicorn
+
+del %SvnExternals%
+
+rem ====== Установка свойств/обновление ревизии ======
+
+echo %PathToTesting% -r %LibsHeadRevision% %UrlToTesting% &gt;&gt; %SvnExternals%
+echo %PathToProperties% -r %LibsHeadRevision% %UrlToProperties% &gt;&gt; %SvnExternals%
+echo %PathToExternals% -r %LibsHeadRevision% %UrlToExternals% &gt;&gt; %SvnExternals%
+
+svn propset svn:externals -F%SvnExternals% ./Externals
+
+del %SvnExternals%
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -84,8 +135,59 @@ UpdateRevisionsToHeadLibs.cmd
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PostBuildEvent>
-      <Command>cd..
-UpdateRevisionsToHeadLibs.cmd
+      <Command>@echo off
+
+set SvnExternals=.\svn.externals
+
+set UrlToLibs="https://svn/svn/Libs/trunk"
+
+set PathToAlicornInclude=./include
+set UrlToAlicornInclude=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/include
+
+set PathToAlicornLib=./lib
+set UrlToAlicornLib=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/lib
+
+set PathToTesting=./Testing
+set UrlToTesting=https://svn/svn/Libs/trunk/Solution/Solution/Testing
+
+set PathToProperties=./Properties
+set UrlToProperties=https://svn/svn/Libs/trunk/Solution/Solution/Properties
+
+set PathToExternals=./Externals
+set UrlToExternals=https://svn/svn/Libs/trunk/Solution/Solution/Externals
+
+rem ====== HEAD ревизия для Libs ======
+
+for /F "Delims=" %%I In (
+	'svn info --show-item=revision %UrlToLibs% --revision HEAD'
+) do set LibsHeadRevision=%%~I
+
+echo Update to revision %LibsHeadRevision%
+
+rem ====== Формирование списка папок для обновления ревизии ======
+
+cd..
+
+if exist %SvnExternals% del %SvnExternals%
+
+rem ====== Установка свойств/обновление ревизии ======
+
+echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% &gt;&gt; %SvnExternals%
+echo %PathToAlicornLib% -r %LibsHeadRevision% %UrlToAlicornLib% &gt;&gt; %SvnExternals%
+
+svn propset svn:externals -F%SvnExternals% ./Externals/Alicorn
+
+del %SvnExternals%
+
+rem ====== Установка свойств/обновление ревизии ======
+
+echo %PathToTesting% -r %LibsHeadRevision% %UrlToTesting% &gt;&gt; %SvnExternals%
+echo %PathToProperties% -r %LibsHeadRevision% %UrlToProperties% &gt;&gt; %SvnExternals%
+echo %PathToExternals% -r %LibsHeadRevision% %UrlToExternals% &gt;&gt; %SvnExternals%
+
+svn propset svn:externals -F%SvnExternals% ./Externals
+
+del %SvnExternals%
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
