@@ -80,7 +80,7 @@ set PathToProperties=./Properties
 set UrlToProperties=https://svn/svn/Libs/trunk/Solution/Solution/Properties
 
 set PathToExternals=./Externals
-set UrlToExternals=https://svn/svn/Libs/trunk/Solution/Solution/Externals
+set UrlToExternals=https://svn/svn/Libs/trunk/Solution/Solution/Externals/Externals
 
 rem ====== HEAD ревизия для Libs ======
 
@@ -154,7 +154,7 @@ set PathToProperties=./Properties
 set UrlToProperties=https://svn/svn/Libs/trunk/Solution/Solution/Properties
 
 set PathToExternals=./Externals
-set UrlToExternals=https://svn/svn/Libs/trunk/Solution/Solution/Externals
+set UrlToExternals=https://svn/svn/Libs/trunk/Solution/Solution/Externals/Externals
 
 rem ====== HEAD ревизия для Libs ======
 
