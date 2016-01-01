@@ -13,30 +13,28 @@
 #define SUBSUBVERSION 0
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 20
-
-// Устанавливается автоматически
-#define REVISION_LIBS 0
+#define REVISION_SOLUTION 21
 
 // Устанавливается автоматически
 #define __ARCHITECTURE__ x86.32
 
 // Устанавливается автоматически
-#define TIME "16:54"
+#define TIME "02:19"
 
 // Устанавливается автоматически
-#define DAY 23
+#define DAY 02
 
 // Устанавливается автоматически
-#define MONTH Декабрь
+#define MONTH Январь
 
 // Устанавливается автоматически
-#define YEAR 2015
+#define YEAR 2016
 
 // Текущий год устанавливается автоматически
-#define __COPYRIGHT_STR__ "© UnicornumVerum 2015 (unicornum.verum@gmail.ru)"
+#define __COPYRIGHT_STR__ "© UnicornumVerum 2015 - 2016 (unicornum.verum@gmail.ru)"
 
-#define __PRODUCT_NAME__ "Продукт: Props"
+// Устанавливается автоматически
+#define __PRODUCT_NAME__ "Externals"
 
 #define __FILE_DESCRIPTION_STR__ ""
 
