@@ -13,13 +13,13 @@
 #define SUBSUBVERSION 0
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 21
+#define REVISION_SOLUTION 22
 
 // Устанавливается автоматически
 #define __ARCHITECTURE__ x86.32
 
 // Устанавливается автоматически
-#define TIME "02:19"
+#define TIME "19:47"
 
 // Устанавливается автоматически
 #define DAY 02
