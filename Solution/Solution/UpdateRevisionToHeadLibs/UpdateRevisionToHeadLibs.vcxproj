@@ -73,6 +73,9 @@ set UrlToAlicornInclude=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/inc
 set PathToAlicornLib=./lib
 set UrlToAlicornLib=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/lib
 
+set PathToAlicornSettingsApp=./Tools/Settings
+set UrlToAlicornSettingsApp=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/Tools/Settings/Settings
+
 set PathToTesting=./Testing
 set UrlToTesting=https://svn/svn/Libs/trunk/Solution/Solution/Testing
 
@@ -100,6 +103,7 @@ rem ====== Установка свойств/обновление ревизии
 
 echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% &gt;&gt; %SvnExternals%
 echo %PathToAlicornLib% -r %LibsHeadRevision% %UrlToAlicornLib% &gt;&gt; %SvnExternals%
+echo %PathToAlicornSettingsApp% -r %LibsHeadRevision% %UrlToAlicornSettingsApp% &gt;&gt; %SvnExternals%
 
 svn propset svn:externals -F%SvnExternals% ./Externals/Alicorn
 
@@ -147,6 +151,9 @@ set UrlToAlicornInclude=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/inc
 set PathToAlicornLib=./lib
 set UrlToAlicornLib=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/lib
 
+set PathToAlicornSettingsApp=./Tools/Settings
+set UrlToAlicornSettingsApp=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/Tools/Settings/Settings
+
 set PathToTesting=./Testing
 set UrlToTesting=https://svn/svn/Libs/trunk/Solution/Solution/Testing
 
@@ -174,6 +181,7 @@ rem ====== Установка свойств/обновление ревизии
 
 echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% &gt;&gt; %SvnExternals%
 echo %PathToAlicornLib% -r %LibsHeadRevision% %UrlToAlicornLib% &gt;&gt; %SvnExternals%
+echo %PathToAlicornSettingsApp% -r %LibsHeadRevision% %UrlToAlicornSettingsApp% &gt;&gt; %SvnExternals%
 
 svn propset svn:externals -F%SvnExternals% ./Externals/Alicorn
 
