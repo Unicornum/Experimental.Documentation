@@ -13,19 +13,19 @@
 #define SUBSUBVERSION 0
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 35
+#define REVISION_SOLUTION 36
 
 // Устанавливается автоматически
 #define __ARCHITECTURE__ Unknown
 
 // Устанавливается автоматически
-#define TIME "11:34"
+#define TIME "01:50"
 
 // Устанавливается автоматически
-#define DAY 28
+#define DAY 02
 
 // Устанавливается автоматически
-#define MONTH Май
+#define MONTH Июнь
 
 // Устанавливается автоматически
 #define YEAR 2016
