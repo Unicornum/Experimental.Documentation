@@ -13,16 +13,16 @@
 #define SUBSUBVERSION 0
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 38
+#define REVISION_SOLUTION 39
 
 // Устанавливается автоматически
 #define __ARCHITECTURE__ Unknown
 
 // Устанавливается автоматически
-#define TIME "21:45"
+#define TIME "13:45"
 
 // Устанавливается автоматически
-#define DAY 06
+#define DAY 18
 
 // Устанавливается автоматически
 #define MONTH Июнь
@@ -36,6 +36,6 @@
 // Устанавливается автоматически
 #define __PRODUCT_NAME__ "Externals"
 
-#define __FILE_DESCRIPTION_STR__ ""
+#define __PRODUCT_DESCRIPTION__ "Externals: <добавить описание продукта>"
 
 #define __FILE_NAME__ ""
