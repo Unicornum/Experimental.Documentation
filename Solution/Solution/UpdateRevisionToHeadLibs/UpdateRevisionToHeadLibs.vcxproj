@@ -74,7 +74,7 @@ set PathToAlicornInclude=./include
 set UrlToAlicornInclude=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/include
 
 set PathToAlicornLib=./lib
-set UrlToAlicornLib=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/lib
+set UrlToAlicornLib=https://svn/svn/BuiltLibraries.no.backup/Solution/Solution/Alicorn/lib
 
 set PathToAlicornSettingsApp=./Tools/Settings
 set UrlToAlicornSettingsApp=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/Tools/Settings/Settings
@@ -111,7 +111,7 @@ if exist %SvnExternals% del %SvnExternals%
 rem ====== Установка свойств/обновление ревизии ======
 
 echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% &gt;&gt; %SvnExternals%
-echo %PathToAlicornLib% -r %LibsHeadRevision% %UrlToAlicornLib% &gt;&gt; %SvnExternals%
+echo %PathToAlicornLib% -r %BuiltLibrariesHeadRevision% %UrlToAlicornLib% &gt;&gt; %SvnExternals%
 echo %PathToAlicornSettingsApp% -r %LibsHeadRevision% %UrlToAlicornSettingsApp% &gt;&gt; %SvnExternals%
 
 svn propset svn:externals -F%SvnExternals% ./Externals/Alicorn
@@ -159,7 +159,7 @@ set PathToAlicornInclude=./include
 set UrlToAlicornInclude=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/include
 
 set PathToAlicornLib=./lib
-set UrlToAlicornLib=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/lib
+set UrlToAlicornLib=https://svn/svn/BuiltLibraries.no.backup/Solution/Solution/Alicorn/lib
 
 set PathToAlicornSettingsApp=./Tools/Settings
 set UrlToAlicornSettingsApp=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/Tools/Settings/Settings
@@ -196,7 +196,7 @@ if exist %SvnExternals% del %SvnExternals%
 rem ====== Установка свойств/обновление ревизии ======
 
 echo %PathToAlicornInclude% -r %LibsHeadRevision% %UrlToAlicornInclude% &gt;&gt; %SvnExternals%
-echo %PathToAlicornLib% -r %LibsHeadRevision% %UrlToAlicornLib% &gt;&gt; %SvnExternals%
+echo %PathToAlicornLib% -r %BuiltLibrariesHeadRevision% %UrlToAlicornLib% &gt;&gt; %SvnExternals%
 echo %PathToAlicornSettingsApp% -r %LibsHeadRevision% %UrlToAlicornSettingsApp% &gt;&gt; %SvnExternals%
 
 svn propset svn:externals -F%SvnExternals% ./Externals/Alicorn
