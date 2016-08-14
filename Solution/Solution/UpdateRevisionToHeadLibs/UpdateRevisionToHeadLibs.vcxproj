@@ -68,6 +68,7 @@
 set SvnExternals=.\svn.externals
 
 set UrlToLibs="https://svn/svn/Libs/trunk"
+set UrlToBuiltLibraries="https://svn/svn/BuiltLibraries.no.backup"
 
 set PathToAlicornInclude=./include
 set UrlToAlicornInclude=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/include
@@ -85,7 +86,7 @@ set PathToProperties=./Properties
 set UrlToProperties=https://svn/svn/Libs/trunk/Solution/Solution/Properties
 
 set PathToExternals=./Externals
-set UrlToExternals=https://svn/svn/Libs/trunk/Solution/Solution/Externals/Externals
+set UrlToExternals=https://svn/svn/BuiltLibraries.no.backup/Solution/Solution/Externals
 
 rem ====== HEAD ревизия для Libs ======
 
@@ -93,7 +94,13 @@ for /F "Delims=" %%I In (
 	'svn info --show-item=revision %UrlToLibs% --revision HEAD'
 ) do set LibsHeadRevision=%%~I
 
-echo Update to revision %LibsHeadRevision%
+rem ====== HEAD ревизия для BuiltLibraries ======
+
+for /F "Delims=" %%I In (
+	'svn info --show-item=revision %UrlToBuiltLibraries% --revision HEAD'
+) do set BuiltLibrariesHeadRevision=%%~I
+
+echo Update to revision %LibsHeadRevision% : %BuiltLibrariesHeadRevision%
 
 rem ====== Формирование списка папок для обновления ревизии ======
 
@@ -115,7 +122,7 @@ rem ====== Установка свойств/обновление ревизии
 
 echo %PathToTesting% -r %LibsHeadRevision% %UrlToTesting% &gt;&gt; %SvnExternals%
 echo %PathToProperties% -r %LibsHeadRevision% %UrlToProperties% &gt;&gt; %SvnExternals%
-echo %PathToExternals% -r %LibsHeadRevision% %UrlToExternals% &gt;&gt; %SvnExternals%
+echo %PathToExternals% -r %BuiltLibrariesHeadRevision% %UrlToExternals% &gt;&gt; %SvnExternals%
 
 svn propset svn:externals -F%SvnExternals% ./Externals
 
@@ -146,6 +153,7 @@ del %SvnExternals%
 set SvnExternals=.\svn.externals
 
 set UrlToLibs="https://svn/svn/Libs/trunk"
+set UrlToBuiltLibraries="https://svn/svn/BuiltLibraries.no.backup"
 
 set PathToAlicornInclude=./include
 set UrlToAlicornInclude=https://svn/svn/Libs/trunk/Solution/Solution/Alicorn/include
@@ -163,7 +171,7 @@ set PathToProperties=./Properties
 set UrlToProperties=https://svn/svn/Libs/trunk/Solution/Solution/Properties
 
 set PathToExternals=./Externals
-set UrlToExternals=https://svn/svn/Libs/trunk/Solution/Solution/Externals/Externals
+set UrlToExternals=https://svn/svn/BuiltLibraries.no.backup/Solution/Solution/Externals
 
 rem ====== HEAD ревизия для Libs ======
 
@@ -171,7 +179,13 @@ for /F "Delims=" %%I In (
 	'svn info --show-item=revision %UrlToLibs% --revision HEAD'
 ) do set LibsHeadRevision=%%~I
 
-echo Update to revision %LibsHeadRevision%
+rem ====== HEAD ревизия для BuiltLibraries ======
+
+for /F "Delims=" %%I In (
+	'svn info --show-item=revision %UrlToBuiltLibraries% --revision HEAD'
+) do set BuiltLibrariesHeadRevision=%%~I
+
+echo Update to revision %LibsHeadRevision% : %BuiltLibrariesHeadRevision%
 
 rem ====== Формирование списка папок для обновления ревизии ======
 
@@ -193,7 +207,7 @@ rem ====== Установка свойств/обновление ревизии
 
 echo %PathToTesting% -r %LibsHeadRevision% %UrlToTesting% &gt;&gt; %SvnExternals%
 echo %PathToProperties% -r %LibsHeadRevision% %UrlToProperties% &gt;&gt; %SvnExternals%
-echo %PathToExternals% -r %LibsHeadRevision% %UrlToExternals% &gt;&gt; %SvnExternals%
+echo %PathToExternals% -r %BuiltLibrariesHeadRevision% %UrlToExternals% &gt;&gt; %SvnExternals%
 
 svn propset svn:externals -F%SvnExternals% ./Externals
 
