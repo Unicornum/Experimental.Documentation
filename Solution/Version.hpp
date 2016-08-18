@@ -13,16 +13,16 @@
 #define SUBSUBVERSION 0
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 46
+#define REVISION_SOLUTION 47
 
 // Устанавливается автоматически
 #define __ARCHITECTURE__ x86.32
 
 // Устанавливается автоматически
-#define TIME "15:58"
+#define TIME "19:14"
 
 // Устанавливается автоматически
-#define DAY 14
+#define DAY 18
 
 // Устанавливается автоматически
 #define MONTH Август
