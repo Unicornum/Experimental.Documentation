@@ -13,16 +13,16 @@
 #define SUBSUBVERSION 0
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 66
+#define REVISION_SOLUTION 67
 
 // Устанавливается автоматически
 #define __PLATFORM__ x64
 
 // Устанавливается автоматически
-#define TIME "22:35"
+#define TIME "13:25"
 
 // Устанавливается автоматически
-#define DAY 07
+#define DAY 08
 
 // Устанавливается автоматически
 #define MONTH Октябрь
