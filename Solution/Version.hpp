@@ -13,19 +13,19 @@
 #define SUBSUBVERSION 0
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 74
+#define REVISION_SOLUTION 75
 
 // Устанавливается автоматически
 #define __PLATFORM__ x64
 
 // Устанавливается автоматически
-#define TIME "23:37"
+#define TIME "13:02"
 
 // Устанавливается автоматически
-#define DAY 27
+#define DAY 30
 
 // Устанавливается автоматически
-#define MONTH Ноябрь
+#define MONTH Декабрь
 
 // Устанавливается автоматически
 #define YEAR 2016
