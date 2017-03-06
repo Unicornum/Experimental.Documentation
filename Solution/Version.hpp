@@ -13,16 +13,16 @@
 #define SUBSUBVERSION 0
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 88
+#define REVISION_SOLUTION 89
 
 // Устанавливается автоматически
 #define __PLATFORM__ x64
 
 // Устанавливается автоматически
-#define TIME "16:06"
+#define TIME "14:03"
 
 // Устанавливается автоматически
-#define DAY 01
+#define DAY 06
 
 // Устанавливается автоматически
 #define MONTH Март
@@ -35,6 +35,8 @@
 
 // Устанавливается автоматически
 #define __PRODUCT_NAME__ "Externals"
+
+#define __APPLICATION_NAME__ "Unknown application"
 
 #define __PRODUCT_DESCRIPTION__ "Externals: <  >"
 
