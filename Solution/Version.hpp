@@ -13,16 +13,16 @@
 #define SUBSUBVERSION 0
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 97
+#define REVISION_SOLUTION 98
 
 // Устанавливается автоматически
 #define __PLATFORM__ x64
 
 // Устанавливается автоматически
-#define TIME "00:04"
+#define TIME "11:04"
 
 // Устанавливается автоматически
-#define DAY 11
+#define DAY 19
 
 // Устанавливается автоматически
 #define MONTH Март
@@ -32,6 +32,8 @@
 
 // Текущий год устанавливается автоматически
 #define __COPYRIGHT_STR__ "© UnicornumVerum 2016 - 2017 (unicornum.verum@gmail.ru)"
+
+#define __COMPANY_NAME__ "Unknown company"
 
 // Устанавливается автоматически
 #define __PRODUCT_NAME__ "Externals"
