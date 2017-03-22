@@ -13,13 +13,13 @@
 #define SUBSUBVERSION 0
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 100
+#define REVISION_SOLUTION 101
 
 // Устанавливается автоматически
 #define __PLATFORM__ x64
 
 // Устанавливается автоматически
-#define TIME "00:19"
+#define TIME "11:31"
 
 // Устанавливается автоматически
 #define DAY 22
