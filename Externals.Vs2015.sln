@@ -16,9 +16,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{27
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Documentation)", "(Documentation)", "{E6C2CA52-DBBA-4FE9-8298-3BEE20A89A50}"
 	ProjectSection(SolutionItems) = preProject
+		Solution\Solution\(Documentation)\Android.hpp = Solution\Solution\(Documentation)\Android.hpp
+		Solution\Solution\(Documentation)\BuildBoost.hpp = Solution\Solution\(Documentation)\BuildBoost.hpp
+		Solution\Solution\(Documentation)\BuildCocos2d.hpp = Solution\Solution\(Documentation)\BuildCocos2d.hpp
 		Solution\Solution\(Documentation)\MainPage.hpp = Solution\Solution\(Documentation)\MainPage.hpp
-		Solution\Solution\(Documentation)\SolutionPage.hpp = Solution\Solution\(Documentation)\SolutionPage.hpp
+		Solution\Solution\(Documentation)\PrebuiltLibraries.hpp = Solution\Solution\(Documentation)\PrebuiltLibraries.hpp
+		Solution\Solution\(Documentation)\Solution.info.hpp = Solution\Solution\(Documentation)\Solution.info.hpp
+		Solution\Solution\(Documentation)\Solution.info.xml = Solution\Solution\(Documentation)\Solution.info.xml
 		Solution\Solution\(Documentation)\Title.png = Solution\Solution\(Documentation)\Title.png
+		Solution\Solution\(Documentation)\Windows.hpp = Solution\Solution\(Documentation)\Windows.hpp
 	EndProjectSection
 EndProject
 Global

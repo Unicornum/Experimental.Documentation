@@ -33,7 +33,7 @@
 *  библиотек, но в остальные проекты не экспортируютс€.
 *
 *  - [Snappy]
-*  - [Cryptopp]
+*  - [Crypto++]
 *  - [RapidXml]
 *  - [Freetype]
 *
@@ -42,6 +42,7 @@
 *  —торонние вспомогательные утилиты.
 *
 *  - [7Zip]
+*  - [CUrl]
 *  - [AStyle]
 *  - [Doxygen]
 *  - [CppCheck]
@@ -49,6 +50,13 @@
 *  - [TortoiseSVN]
 *  - [OpenCppCoverage]
 *  - [Visual Leak Detector]
+*  
+*  ѕостроение библиотек
+*  ====================
+*  
+* \subpage ExternalsWindowsPage
+*  
+* \subpage ExternalsAndroidPage
 *
 *  [Boost]: http://www.boost.org/ "Boost main page"
 *  [Poco]: http://pocoproject.org/ "Poco main page"
@@ -62,7 +70,7 @@
 *  [Doxygen]: http://www.stack.nl/~dimitri/doxygen/ "Doxygen main page"
 *  [Visual Leak Detector]: https://vld.codeplex.com/ "Visual Leak Detector main page"
 *  [Snappy]: https://github.com/google/snappy "Snappy on GitHub"
-*  [Cryptopp]: https://www.cryptopp.com/ "Cryptopp main page"
+*  [Crypto++]: https://www.cryptopp.com/ "Cryptopp main page"
 *  [RapidXml]: http://rapidxml.sourceforge.net/ "RapidXml main page"
 *  [OpenCppCoverage]: https://opencppcoverage.codeplex.com/ "OpenCppCoverage main page"
 *  [TortoiseSVN]: https://tortoisesvn.net/ "TortoiseSVN main page"
@@ -70,4 +78,5 @@
 *  [CrystaX]: https://www.crystax.net/ru "CrystaX main page"
 *  [libRocket]: https://github.com/libRocket "libRocket github page"
 *  [Freetype]: https://www.freetype.org/ "Freetype main page"
+*  [CUrl]: https://curl.haxx.se/ "CUrl main page"
 */
