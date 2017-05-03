@@ -2,16 +2,11 @@
 /**
 * \page ExternalsAndroidPage Построение для Android
 *
-*  \subpage PrebuiltLibrariesPage
-*
 *  \subpage BuildBoost
 *
 *  \subpage BuildCocos2d
 *
-* ### Сборка libRocket
 *  [Сборка libRocket]
-*
-*  [Сборка libRocket]: https://github.com/Unicornum/Android/tree/master/libRocket "libRocket build"
 *
 * ### Сборка Crypto++
 *
@@ -27,4 +22,11 @@
 *  функций, не найденные функции стандартной библиотеки).
 *  - В целом - ощущение, что работа нативного кода завязана на совместную
 *  работу с кодом java.
+*  
+*  Дополнительно
+*  -------------
+*  
+*  \subpage PrebuiltLibrariesPage
+*  
+*  [Сборка libRocket]: https://github.com/Unicornum/Android/tree/master/libRocket "libRocket build"
 */

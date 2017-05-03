@@ -1,0 +1,27 @@
+  
+ANDROID_NDK = E:/Android/crystax-ndk-10.3.2 ;
+  
+using clang : android : 
+	$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-g++ :
+	<compileflags>--sysroot=$(ANDROID_NDK)/platforms/android-15/arch-arm
+	<compileflags>-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include
+	<compileflags>-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include
+	<compileflags>-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
+	<compileflags>-o
+	<compileflags>-xc++-header
+	<compileflags>-xc++
+	<compileflags>-g0
+	<compileflags>-lstdc++
+	<compileflags>-std=c++1y
+	<compileflags>-fexceptions
+	<compileflags>-frtti
+	<compileflags>-O3
+	<compileflags>-DNDEBUG
+	<compileflags>-D__ANDROID__
+	<compileflags>-D__SOFTFP__
+	<compileflags>-D__arm__
+	<compileflags>-D__GLIBC__
+	<compileflags>-DBOOST_FILESYSTEM_VERSION=3
+	<linkflags>-r"s"
+;
+  

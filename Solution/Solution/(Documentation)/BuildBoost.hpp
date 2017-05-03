@@ -2,13 +2,64 @@
 /**
 * \page BuildBoost Сборка Boost для Android
 *  
+*  Сборка при помощи gcc
+*  ---------------------
+*  
+* \note
+*  Сборка производилась:
+*  - 3.05.2017.
+*  - crystax-ndk-10.3.2.
+*  - Boost 1.64.
+*  
+*  Сборка:
+*  - В папке \$(BoostRoot) запустить bootstrap.bat (будет построен файл b2.exe).
+*  - В папке \$(BoostRoot)/tools/build/src создать файл с именем
+*  user-config.jam, содержащий (при необходимости изменить путь к ANDROID_NDK и
+*  нужный ANDROID_API):
+* \include ".\Solution\(Documentation)\user-config.jam"
+*  
+*  - В папке \$(BoostRoot) создать и запустить на исполнение файл 
+*  BuildAndroid.cmd (при необходимости изменить путь к ANDROID_NDK и библиотеке
+*  icu):
+* \include ".\Solution\(Documentation)\BuildAndroid.cmd"
+*  
+*  - Результат построения будет в папке \$(BoostRoot)/android/lib.
+*  
+* \warning
+*  После первого запуска не будет построена библиотека Boost.Locale, т.к. 
+*  сборщик Boost не сможет собрать файл 
+*  \$(BoostRoot)/libs/locale/build/has_icu_test.cpp (в чем проблема, неясно,
+*  ясно только, что для сборки этого файла не используются настройки из
+*  user-config.jam, а используются настройки по умолчанию); для того, чтобы
+*  собрать Boost.Locale, нужно в файле \$(BoostRoot)/bin.v2/project-cache.jam
+*  заменить \b false на \b true в строке
+* \code
+
+set "icu-<address-model>32-<architecture>arm-<target-os>linux-<toolset-clang:version>android-<toolset>clang" : "false" ;
+
+* \endcode
+*  после чего запустить скрипт BuildAndroid.cmd еще раз.
+*  
+* \note
+*  Во всех файлах выше используется слово \b clang, хотя сборка производится 
+*  при помощи \b gcc. Это из-за того, что, начиная с версии 1.61, запуск
+*  построения при созданном файле user-config.jam, содержащем 
+*  "using clang : android :", сборка просто зависает.
+*
 *  Сборка при помощи Clang
 *  -----------------------
 *  
+* \note
+*  Сборка производилась:
+*  - 1.09.2016.
+*  - Android NDK r12.
+*  - Boost 1.61.
+*  
+*  Сборка:
 *  - В папке \$(BoostRoot) запустить bootstrap.bat.
-*  - В папке \$(BoostRoot) создать файл BuildAndroid.cmd, содержащий
-*  (\b ANDROID_NDK задает путь к (сюрприз!) ANDROID NDK, \b RESULT - к 'суммарному'
-*  файлу всех собранных библиотек):
+*  - В папке \$(BoostRoot) создать и запустить на исполнение файл 
+*  BuildAndroid.cmd, содержащий (\b ANDROID_NDK задает путь к (сюрприз!) 
+*  ANDROID NDK, \b RESULT - к 'суммарному' файлу всех собранных библиотек):
 * \code
   
 set ANDROID_NDK=d:/android/ndk
@@ -42,66 +93,5 @@ cd ..
 ar qv %RESULT% %OUT_TMP_DIR%/*.o
   
 * \endcode
-*  и запустить его на исполнение.
 *  - Результат построения будет в папке \$(BoostRoot)/stage/lib.
-*  
-* \note
-*  Сборка производилась:
-*  - 1.09.2016.
-*  - Android NDK r12.
-*  - Boost 1.61.
-*  
-*  Сборка при помощи gcc
-*  ---------------------
-*
-*  - В папке \$(BoostRoot)/tools/build/src создать файл с именем 
-*  user-config.jam, содержащий (заменить путь к Android NDK при необходимости):
-* \code
-
-ANDROID_NDK = d:/android/ndk ;
-
-using gcc : android : $(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-g++ :
-<compileflags>--sysroot=$(ANDROID_NDK)/platforms/android-15/arch-arm
-<compileflags>-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include
-<compileflags>-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include
-<compileflags>-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
-<compileflags>-o
-<compileflags>-xc++-header
-<compileflags>-xc++
-<compileflags>-std=c++1y
-<compileflags>-fexceptions
-<compileflags>-O3
-<compileflags>-DNDEBUG
-<compileflags>-D__ANDROID__
-<compileflags>-D__SOFTFP__
-<compileflags>-D__arm__
-<compileflags>-g2
-<compileflags>-lstdc++
-<compileflags>-D__GLIBC__
-<compileflags>-DBOOST_FILESYSTEM_VERSION=3
-<linkflags>-r"s"
-<archiver>$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-ar
-<ranlib>$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-ranlib
-;
-
-* \endcode
-*  - В папке \$(BoostRoot) запустить bootstrap.bat.
-*  - В папке \$(BoostRoot) создать файл BuildAndroid.cmd, содержащий:
-* \code
-
-b2 --without-python --without-thread toolset=gcc-android target-os=linux threading=multi link=static runtime-link=static -j 4
-
-* \endcode
-*  и запустить его на исполнение.
-*  - Результат построения будет в папке \$(BoostRoot)/stage/lib.
-*  
-* \note
-*  Сборка производилась:
-*  - 1.09.2016.
-*  - Android NDK r12.
-*  - Boost 1.60.
-*
-* \warning
-*  Для Boost 1.61 сборка при помощи gcc не работает, b2.exe при запуске просто
-*  висит безо всякого видимого результата.
 */
