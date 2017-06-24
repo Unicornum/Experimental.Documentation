@@ -7,6 +7,8 @@
 *  \subpage BuildCocos2d
 *
 *  [—борка libRocket]
+*  
+*  [—борка FreeImage]
 *
 * ### —борка Crypto++
 *
@@ -29,4 +31,5 @@
 *  \subpage PrebuiltLibrariesPage
 *  
 *  [—борка libRocket]: https://github.com/Unicornum/Android/tree/master/libRocket "libRocket build"
+*  [—борка FreeImage]: https://github.com/Unicornum/Android/tree/master/FreeImage "FreeImage build"
 */

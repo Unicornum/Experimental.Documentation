@@ -37,6 +37,7 @@
 *  - [Crypto++]
 *  - [RapidXml]
 *  - [Freetype]
+*  - [FreeImage]
 *
 *  Используемые программы
 *  ======================
@@ -81,4 +82,5 @@
 *  [Freetype]: https://www.freetype.org/ "Freetype main page"
 *  [CUrl]: https://curl.haxx.se/ "CUrl main page"
 *  [Date]: https://github.com/HowardHinnant/date "Date github page"
+*  [FreeImage]: http://freeimage.sourceforge.net/ "FreeImage page"
 */
