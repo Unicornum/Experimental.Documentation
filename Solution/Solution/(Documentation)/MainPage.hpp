@@ -50,6 +50,7 @@
 *  - [CppCheck]
 *  - [Graphviz]
 *  - [TortoiseSVN]
+*  - [SourceMonitor]
 *  - [OpenCppCoverage]
 *  - [Visual Leak Detector]
 *  
@@ -83,4 +84,5 @@
 *  [CUrl]: https://curl.haxx.se/ "CUrl main page"
 *  [Date]: https://github.com/HowardHinnant/date "Date github page"
 *  [FreeImage]: http://freeimage.sourceforge.net/ "FreeImage page"
+*  [SourceMonitor]: http://www.campwoodsw.com/sourcemonitor.html "SourceMonitor page"
 */
