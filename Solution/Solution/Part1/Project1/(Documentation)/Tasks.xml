@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tasks>
+  <Options>
+    <Width>1410</Width>
+    <Height>946</Height>
+    <X>318</X>
+    <Y>68</Y>
+  </Options>
+  <Process>
+    <Task1 Text="Тест" Type="None" Version="None" ExternalProgram="Project" Expanded="true" Completed="false" History="true" ParentTaskText="false">
+      <Task2 Text="Проверка увеличения номера версии." Type="Red" Version="Secondary" ExternalProgram="None" Expanded="false" Completed="false" History="true" ParentTaskText="false"/>
+      <Task3 Text="Далее..." Type="None" Version="None" ExternalProgram="Project" Expanded="false" Completed="false" History="false" ParentTaskText="false"/>
+      <Task4 Text="Проверка записи в историю изменений." Type="Bug" Version="None" ExternalProgram="None" Expanded="false" Completed="true" History="true" ParentTaskText="false"/>
+    </Task1>
+  </Process>
+  <Complete>
+    <Week6162>
+      <Task10 Text="Завершение спринта." Type="Red" Version="Primary" ExternalProgram="Solution" Expanded="false" Completed="true" History="false" ParentTaskText="false"/>
+    </Week6162>
+    <Week6161/>
+    <Week6160/>
+    <Week6159/>
+  </Complete>
+</Tasks>

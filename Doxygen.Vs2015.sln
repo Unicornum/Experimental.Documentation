@@ -1,0 +1,138 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part1", "Part1", "{2DC0DE23-1AD7-46E6-A108-55277CB059CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{D7E0538C-F90D-4BA9-BEC2-598EFBECC249}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Documentation)", "(Documentation)", "{88F76559-08F8-455C-996D-40854423D83E}"
+	ProjectSection(SolutionItems) = preProject
+		Solution\Solution\(Documentation)\Coverage.result.html = Solution\Solution\(Documentation)\Coverage.result.html
+		Solution\Solution\(Documentation)\Coverage.result.missed.html = Solution\Solution\(Documentation)\Coverage.result.missed.html
+		Solution\Solution\(Documentation)\Downloads.hpp = Solution\Solution\(Documentation)\Downloads.hpp
+		Solution\Solution\(Documentation)\History.0000.hpp = Solution\Solution\(Documentation)\History.0000.hpp
+		Solution\Solution\(Documentation)\History.hpp = Solution\Solution\(Documentation)\History.hpp
+		Solution\Solution\(Documentation)\License.txt = Solution\Solution\(Documentation)\License.txt
+		Solution\Solution\(Documentation)\MainPage.hpp = Solution\Solution\(Documentation)\MainPage.hpp
+		Solution\Solution\(Documentation)\Manual.hpp = Solution\Solution\(Documentation)\Manual.hpp
+		Solution\Solution\(Documentation)\Metrics.result.html = Solution\Solution\(Documentation)\Metrics.result.html
+		Solution\Solution\(Documentation)\Metrics.result.warning.html = Solution\Solution\(Documentation)\Metrics.result.warning.html
+		Solution\Solution\(Documentation)\MSBuild.result.txt = Solution\Solution\(Documentation)\MSBuild.result.txt
+		Solution\Solution\(Documentation)\Requirements.hpp = Solution\Solution\(Documentation)\Requirements.hpp
+		Solution\Solution\(Documentation)\Solution.info.hpp = Solution\Solution\(Documentation)\Solution.info.hpp
+		Solution\Solution\(Documentation)\Solution.info.xml = Solution\Solution\(Documentation)\Solution.info.xml
+		Solution\Solution\(Documentation)\SolutionPage.hpp = Solution\Solution\(Documentation)\SolutionPage.hpp
+		Solution\Solution\(Documentation)\SolutionStruct.hpp = Solution\Solution\(Documentation)\SolutionStruct.hpp
+		Solution\Solution\(Documentation)\Tasks.hpp = Solution\Solution\(Documentation)\Tasks.hpp
+		Solution\Solution\(Documentation)\Title.png = Solution\Solution\(Documentation)\Title.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{4B9465B9-093F-4EF8-B9B7-67107C3B38DF}"
+	ProjectSection(SolutionItems) = preProject
+		Solution\Version.hpp = Solution\Version.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part2", "Part2", "{538A21C1-45C5-42D5-94C9-E25238446EE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project1", "Project1", "{F1E3A57C-3E17-481D-B0B7-9229685BD35F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project2", "Project2", "{5B859792-2F07-464C-ABB0-5C04D5A6C6FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project3", "Project3", "{6DEEDA9F-1B64-4CF2-BBEF-0FCC2AC5BCD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project4", "Project4", "{28EFF879-E10B-47BD-8466-50E24D5EEE84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Documentation)", "(Documentation)", "{3BBFA51B-0C2A-4DB3-9EFC-21FBB68F7D69}"
+	ProjectSection(SolutionItems) = preProject
+		Solution\Solution\Part1\(Documentation)\PartPage.hpp = Solution\Solution\Part1\(Documentation)\PartPage.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Documentation)", "(Documentation)", "{8A711C86-7671-4012-93AF-33C619FD2E05}"
+	ProjectSection(SolutionItems) = preProject
+		Solution\Solution\Part2\(Documentation)\PartPage.hpp = Solution\Solution\Part2\(Documentation)\PartPage.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Documentation)", "(Documentation)", "{AEC32665-9A1A-4546-889C-8160454821E5}"
+	ProjectSection(SolutionItems) = preProject
+		Solution\Solution\Part1\Project1\(Documentation)\ProjectPage.hpp = Solution\Solution\Part1\Project1\(Documentation)\ProjectPage.hpp
+		Solution\Solution\Part1\Project1\(Documentation)\Task.hpp = Solution\Solution\Part1\Project1\(Documentation)\Task.hpp
+		Solution\Solution\Part1\Project1\(Documentation)\Tasks.xml = Solution\Solution\Part1\Project1\(Documentation)\Tasks.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Documentation)", "(Documentation)", "{FC877D39-E373-489C-95F1-3A07FE37BBD9}"
+	ProjectSection(SolutionItems) = preProject
+		Solution\Solution\Part1\Project2\(Documentation)\ProjectPage.hpp = Solution\Solution\Part1\Project2\(Documentation)\ProjectPage.hpp
+		Solution\Solution\Part1\Project2\(Documentation)\Task.hpp = Solution\Solution\Part1\Project2\(Documentation)\Task.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Documentation)", "(Documentation)", "{404CB4B2-169A-4E27-896E-E44676D97BBD}"
+	ProjectSection(SolutionItems) = preProject
+		Solution\Solution\Part2\Project3\(Documentation)\ProjectPage.hpp = Solution\Solution\Part2\Project3\(Documentation)\ProjectPage.hpp
+		Solution\Solution\Part2\Project3\(Documentation)\Task.hpp = Solution\Solution\Part2\Project3\(Documentation)\Task.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{45E19919-EB89-4E52-9825-24D86DF310C7}"
+	ProjectSection(SolutionItems) = preProject
+		Solution\Solution\Part2\Project4\Documentation\ProjectPage.hpp = Solution\Solution\Part2\Project4\Documentation\ProjectPage.hpp
+		Solution\Solution\Part2\Project4\Documentation\Task.hpp = Solution\Solution\Part2\Project4\Documentation\Task.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test.Classes", "Test.Classes", "{99E2026A-9707-4FE1-BAC2-67EF70FBACD7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1", "Solution\Solution\Part1\Project1\Project1\Project1.vcxproj", "{07F5246B-252E-47E1-811D-FA91C24706F0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project2", "Solution\Solution\Part1\Project2\Project2\Project2.vcxproj", "{71EC3686-BB51-4E89-9ACD-B1EE56E6203E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project3", "Solution\Solution\Part2\Project3\Project3\Project3.vcxproj", "{B00F4C8B-7E19-4E8E-AEED-DD84B5FDFE18}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project4", "Solution\Solution\Part2\Project4\Project4\Project4.vcxproj", "{F7B2D8FF-25D8-497C-9257-CF89F7FB224F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07F5246B-252E-47E1-811D-FA91C24706F0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{07F5246B-252E-47E1-811D-FA91C24706F0}.Debug|Win32.Build.0 = Debug|Win32
+		{07F5246B-252E-47E1-811D-FA91C24706F0}.Release|Win32.ActiveCfg = Release|Win32
+		{07F5246B-252E-47E1-811D-FA91C24706F0}.Release|Win32.Build.0 = Release|Win32
+		{71EC3686-BB51-4E89-9ACD-B1EE56E6203E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{71EC3686-BB51-4E89-9ACD-B1EE56E6203E}.Debug|Win32.Build.0 = Debug|Win32
+		{71EC3686-BB51-4E89-9ACD-B1EE56E6203E}.Release|Win32.ActiveCfg = Release|Win32
+		{71EC3686-BB51-4E89-9ACD-B1EE56E6203E}.Release|Win32.Build.0 = Release|Win32
+		{B00F4C8B-7E19-4E8E-AEED-DD84B5FDFE18}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B00F4C8B-7E19-4E8E-AEED-DD84B5FDFE18}.Debug|Win32.Build.0 = Debug|Win32
+		{B00F4C8B-7E19-4E8E-AEED-DD84B5FDFE18}.Release|Win32.ActiveCfg = Release|Win32
+		{B00F4C8B-7E19-4E8E-AEED-DD84B5FDFE18}.Release|Win32.Build.0 = Release|Win32
+		{F7B2D8FF-25D8-497C-9257-CF89F7FB224F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7B2D8FF-25D8-497C-9257-CF89F7FB224F}.Debug|Win32.Build.0 = Debug|Win32
+		{F7B2D8FF-25D8-497C-9257-CF89F7FB224F}.Release|Win32.ActiveCfg = Release|Win32
+		{F7B2D8FF-25D8-497C-9257-CF89F7FB224F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2DC0DE23-1AD7-46E6-A108-55277CB059CD} = {4B9465B9-093F-4EF8-B9B7-67107C3B38DF}
+		{88F76559-08F8-455C-996D-40854423D83E} = {4B9465B9-093F-4EF8-B9B7-67107C3B38DF}
+		{538A21C1-45C5-42D5-94C9-E25238446EE7} = {4B9465B9-093F-4EF8-B9B7-67107C3B38DF}
+		{F1E3A57C-3E17-481D-B0B7-9229685BD35F} = {2DC0DE23-1AD7-46E6-A108-55277CB059CD}
+		{5B859792-2F07-464C-ABB0-5C04D5A6C6FE} = {2DC0DE23-1AD7-46E6-A108-55277CB059CD}
+		{6DEEDA9F-1B64-4CF2-BBEF-0FCC2AC5BCD9} = {538A21C1-45C5-42D5-94C9-E25238446EE7}
+		{28EFF879-E10B-47BD-8466-50E24D5EEE84} = {538A21C1-45C5-42D5-94C9-E25238446EE7}
+		{3BBFA51B-0C2A-4DB3-9EFC-21FBB68F7D69} = {2DC0DE23-1AD7-46E6-A108-55277CB059CD}
+		{8A711C86-7671-4012-93AF-33C619FD2E05} = {538A21C1-45C5-42D5-94C9-E25238446EE7}
+		{AEC32665-9A1A-4546-889C-8160454821E5} = {F1E3A57C-3E17-481D-B0B7-9229685BD35F}
+		{FC877D39-E373-489C-95F1-3A07FE37BBD9} = {5B859792-2F07-464C-ABB0-5C04D5A6C6FE}
+		{404CB4B2-169A-4E27-896E-E44676D97BBD} = {6DEEDA9F-1B64-4CF2-BBEF-0FCC2AC5BCD9}
+		{45E19919-EB89-4E52-9825-24D86DF310C7} = {28EFF879-E10B-47BD-8466-50E24D5EEE84}
+		{99E2026A-9707-4FE1-BAC2-67EF70FBACD7} = {F1E3A57C-3E17-481D-B0B7-9229685BD35F}
+		{07F5246B-252E-47E1-811D-FA91C24706F0} = {F1E3A57C-3E17-481D-B0B7-9229685BD35F}
+		{71EC3686-BB51-4E89-9ACD-B1EE56E6203E} = {5B859792-2F07-464C-ABB0-5C04D5A6C6FE}
+		{B00F4C8B-7E19-4E8E-AEED-DD84B5FDFE18} = {6DEEDA9F-1B64-4CF2-BBEF-0FCC2AC5BCD9}
+		{F7B2D8FF-25D8-497C-9257-CF89F7FB224F} = {28EFF879-E10B-47BD-8466-50E24D5EEE84}
+	EndGlobalSection
+EndGlobal
