@@ -13,16 +13,16 @@
 #define SUBSUBVERSION 0
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 145
+#define REVISION_SOLUTION 160
 
 // Устанавливается автоматически
 #define __PLATFORM__ Win32
 
 // Устанавливается автоматически
-#define TIME "22:03"
+#define TIME "10:08"
 
 // Устанавливается автоматически
-#define DAY 15
+#define DAY 26
 
 // Устанавливается автоматически
 #define MONTH Февраль
