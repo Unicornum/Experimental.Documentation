@@ -2,6 +2,10 @@
 /**
 * \page SolutionPage Структура решения
 *  
+* \subpage SolutionStatisticsPage
+*  
+* \subpage SolutionTasksPage
+*  
 *  Общая структура решения
 *  -----------------------
 *  
@@ -37,9 +41,5 @@
 *
 * \subpage ExternalsPage
 *
-* \subpage SolutionTasksPage
-*
-* \subpage SolutionStatisticsPage
-*  
 *  ---------------------------------------------------------------------------
 */
