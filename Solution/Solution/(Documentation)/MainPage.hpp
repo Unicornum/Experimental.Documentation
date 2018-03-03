@@ -19,8 +19,8 @@
 *  
 *  -# Project4 содержит папку Documentation, а не (Documentation).
 *  -# —сылки на не существующие разделы \b Part2Page, \b Project2Page.
-*  
-* \n
+* 
+*  \n
 *  ---------------------------------------------------------------------------
 *  
 * \subpage ManualPage
