@@ -1,12 +1,9 @@
 @echo off
 
-SET PATH_TO_INI=".\Solution\Solution\Externals\Utilities\Doxygen\universal.doxygen"
+set PathToExternals=.\Solution\Solution\Externals
 
-SET DOXYGEN_NAME=TestDoxygen
-SET DOXYGEN_VERSION=1.2.3.4 (Build 5)
-SET DOXYGEN_BRIEF=Testing generate documentation.
-SET DOXYGEN_INPUT=.\
+call %PathToExternals%\BuildSolution.cmd "Debug:x64" "BuildAll:Rebuild"
 
-doxygen.exe %PATH_TO_INI%
+.\Solution\Solution\^(Documentation^)\html\index.html
 
 pause

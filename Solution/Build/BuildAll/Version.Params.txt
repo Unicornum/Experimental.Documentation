@@ -1,0 +1,6 @@
+--file
+P:\projects\Documentation\Solution\Version.hpp
+--update
+--set-environment-variables
+--configuration
+x64

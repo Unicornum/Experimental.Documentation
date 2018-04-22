@@ -1,9 +1,16 @@
 
 /**
+* \page Part1Project1BriefPage
+*  Краткое описание проекта.
+*/
+
+/**
 * \page Part1Project1Page Проект первый
 *  
-* \section sIntroProject1 Введение
-*  Краткое описание проекта.
+*  Введение
+*  ========
+*  
+* \copydoc Part1Project1BriefPage
 *
 *  Подробное описание проекта
 *  ==========================

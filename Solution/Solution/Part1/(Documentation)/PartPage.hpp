@@ -1,12 +1,19 @@
 
 /**
+* \page Part1BriefPage
+*  Краткое описание раздела.
+*/
+
+/**
 * \dir Solution\Solution\Part1
 *  Папка содержит проекты раздела part1.
 *  
 * \page Part1Page Раздел Part1
 *  
-* \section sIntroPart1 Введение
-*  Краткое описание раздела.
+*  Введение
+*  ========
+*  
+* \copydoc Part1BriefPage
 *
 *  Подробное описание раздела
 *  ==========================
@@ -17,13 +24,12 @@
 *  ---------------
 *  
 *  ### Проект 1
-* \insert_sIntroProject1
-* \begin_auto_insert_section
-*  Краткое описание проекта.
-* \end_auto_insert_section
 *  
+* \copydoc Part1Project1BriefPage
+*
 *  Страница проекта: \subpage Part1Project1Page
 *  
 *  ### Проект 2
+*  
 * \subpage Project2Page
 */

@@ -23,11 +23,8 @@
 *  
 * ### Раздел 1
 *  
-* \insert_sIntroPart1
-* \begin_auto_insert_section
-*  Краткое описание раздела.
-* \end_auto_insert_section
-*  
+* \copydoc Part1BriefPage
+*
 *  Страница раздела: \subpage Part1Page
 *  
 * ### Раздел 2

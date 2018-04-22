@@ -8,24 +8,24 @@
 
 #define VERSION 2
 
-#define SUBVERSION 0
+#define SUBVERSION 1
 
 #define SUBSUBVERSION 0
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 162
+#define REVISION_SOLUTION 241
 
 // Устанавливается автоматически
-#define __PLATFORM__ Win32
+#define __PLATFORM__ x64
 
 // Устанавливается автоматически
-#define TIME "21:37"
+#define TIME "20:58"
 
 // Устанавливается автоматически
-#define DAY 03
+#define DAY 22
 
 // Устанавливается автоматически
-#define MONTH Март
+#define MONTH Апрель
 
 // Устанавливается автоматически
 #define YEAR 2018
@@ -36,10 +36,10 @@
 #define __COMPANY_NAME__ "UnicornumVerum"
 
 // Устанавливается автоматически
-#define __PRODUCT_NAME__ "Doxygen"
+#define __PRODUCT_NAME__ "Documentation"
 
 #define __APPLICATION_NAME__ "Unknown application"
 
-#define __PRODUCT_DESCRIPTION__ "Образец структуры документации решения"
+#define __PRODUCT_DESCRIPTION__ "Sample documentation solution architecture."
 
 #define __FILE_NAME__ ""
