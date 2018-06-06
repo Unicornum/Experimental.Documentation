@@ -1,4 +1,4 @@
-
+﻿
 #pragma once
 
 /**
@@ -10,22 +10,22 @@
 
 #define SUBVERSION 1
 
-#define SUBSUBVERSION 0
+#define SUBSUBVERSION 1
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 344
+#define REVISION_SOLUTION 396
 
 // Устанавливается автоматически
 #define __PLATFORM__ x64
 
 // Устанавливается автоматически
-#define TIME "11:42"
+#define TIME "13:01"
 
 // Устанавливается автоматически
-#define DAY 04
+#define DAY 06
 
 // Устанавливается автоматически
-#define MONTH Май
+#define MONTH 06
 
 // Устанавливается автоматически
 #define YEAR 2018

@@ -1,4 +1,3 @@
---quiet
---message
-[Documentation] Update documentation (v2.1.0).
-P:\projects\Documentation\Solution\Solution\(Documentation)\html
+info
+P:\projects\Documentation
+--revision=HEAD

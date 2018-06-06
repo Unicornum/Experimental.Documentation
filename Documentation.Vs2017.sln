@@ -10,7 +10,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Documentation)", "(Documentation)", "{88F76559-08F8-455C-996D-40854423D83E}"
 	ProjectSection(SolutionItems) = preProject
 		Solution\Solution\(Documentation)\Downloads.hpp = Solution\Solution\(Documentation)\Downloads.hpp
-		Solution\Solution\(Documentation)\License.txt = Solution\Solution\(Documentation)\License.txt
 		Solution\Solution\(Documentation)\MainPage.hpp = Solution\Solution\(Documentation)\MainPage.hpp
 		Solution\Solution\(Documentation)\Manual.hpp = Solution\Solution\(Documentation)\Manual.hpp
 		Solution\Solution\(Documentation)\Requirements.hpp = Solution\Solution\(Documentation)\Requirements.hpp
@@ -79,7 +78,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project4", "Solution\Soluti
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BuildAll", "Solution\Build\BuildAll\BuildAll.vcxproj", "{68B527B9-8E06-4C17-90FD-E635FD0089B1}"
 	ProjectSection(ProjectDependencies) = postProject
-		{1EEE6DE2-7453-48F7-8832-55545F31BC7B} = {1EEE6DE2-7453-48F7-8832-55545F31BC7B}
+		{76C3E197-C212-4438-A794-A36110615344} = {76C3E197-C212-4438-A794-A36110615344}
+		{AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57} = {AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57}
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{8621D1C8-22AC-47F4-AB7D-2AB1173D35AB}"
@@ -94,6 +94,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Documentation)", "(Documen
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrintParams", "Solution\Solution\Support\PrintParams\PrintParams\PrintParams.vcxproj", "{1EEE6DE2-7453-48F7-8832-55545F31BC7B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Version", "Solution\Solution\Alicorn.doxygen.ignore\Tools\Version\Version.vcxproj", "{76C3E197-C212-4438-A794-A36110615344}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Documentation", "Solution\Solution\Alicorn.doxygen.ignore\Tools\Documentation\Documentation.vcxproj", "{AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doxygen", "Doxygen", "{C9C2212B-54A0-481D-BD99-5D980C6AEBA7}"
+	ProjectSection(SolutionItems) = preProject
+		Solution\Solution\Externals\Utilities\Doxygen\doxygen.css = Solution\Solution\Externals\Utilities\Doxygen\doxygen.css
+		Solution\Solution\Externals\Utilities\Doxygen\layout.xml = Solution\Solution\Externals\Utilities\Doxygen\layout.xml
+		Solution\Solution\Externals\Utilities\Doxygen\universal.doxygen = Solution\Solution\Externals\Utilities\Doxygen\universal.doxygen
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,12 +146,12 @@ Global
 		{F7B2D8FF-25D8-497C-9257-CF89F7FB224F}.Release|Win32.Build.0 = Release|Win32
 		{F7B2D8FF-25D8-497C-9257-CF89F7FB224F}.Release|x64.ActiveCfg = Release|Win32
 		{F7B2D8FF-25D8-497C-9257-CF89F7FB224F}.Release|x64.Build.0 = Release|Win32
-		{68B527B9-8E06-4C17-90FD-E635FD0089B1}.Debug|Win32.ActiveCfg = Debug|x64
-		{68B527B9-8E06-4C17-90FD-E635FD0089B1}.Debug|Win32.Build.0 = Debug|x64
+		{68B527B9-8E06-4C17-90FD-E635FD0089B1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68B527B9-8E06-4C17-90FD-E635FD0089B1}.Debug|Win32.Build.0 = Debug|Win32
 		{68B527B9-8E06-4C17-90FD-E635FD0089B1}.Debug|x64.ActiveCfg = Debug|x64
 		{68B527B9-8E06-4C17-90FD-E635FD0089B1}.Debug|x64.Build.0 = Debug|x64
-		{68B527B9-8E06-4C17-90FD-E635FD0089B1}.Release|Win32.ActiveCfg = Release|x64
-		{68B527B9-8E06-4C17-90FD-E635FD0089B1}.Release|Win32.Build.0 = Release|x64
+		{68B527B9-8E06-4C17-90FD-E635FD0089B1}.Release|Win32.ActiveCfg = Release|Win32
+		{68B527B9-8E06-4C17-90FD-E635FD0089B1}.Release|Win32.Build.0 = Release|Win32
 		{68B527B9-8E06-4C17-90FD-E635FD0089B1}.Release|x64.ActiveCfg = Release|x64
 		{68B527B9-8E06-4C17-90FD-E635FD0089B1}.Release|x64.Build.0 = Release|x64
 		{1EEE6DE2-7453-48F7-8832-55545F31BC7B}.Debug|Win32.ActiveCfg = Debug|x64
@@ -151,6 +162,22 @@ Global
 		{1EEE6DE2-7453-48F7-8832-55545F31BC7B}.Release|Win32.Build.0 = Release|x64
 		{1EEE6DE2-7453-48F7-8832-55545F31BC7B}.Release|x64.ActiveCfg = Release|x64
 		{1EEE6DE2-7453-48F7-8832-55545F31BC7B}.Release|x64.Build.0 = Release|x64
+		{76C3E197-C212-4438-A794-A36110615344}.Debug|Win32.ActiveCfg = Debug|x64
+		{76C3E197-C212-4438-A794-A36110615344}.Debug|Win32.Build.0 = Debug|x64
+		{76C3E197-C212-4438-A794-A36110615344}.Debug|x64.ActiveCfg = Debug|x64
+		{76C3E197-C212-4438-A794-A36110615344}.Debug|x64.Build.0 = Debug|x64
+		{76C3E197-C212-4438-A794-A36110615344}.Release|Win32.ActiveCfg = Release|x64
+		{76C3E197-C212-4438-A794-A36110615344}.Release|Win32.Build.0 = Release|x64
+		{76C3E197-C212-4438-A794-A36110615344}.Release|x64.ActiveCfg = Release|x64
+		{76C3E197-C212-4438-A794-A36110615344}.Release|x64.Build.0 = Release|x64
+		{AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57}.Debug|Win32.ActiveCfg = Debug|x64
+		{AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57}.Debug|Win32.Build.0 = Debug|x64
+		{AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57}.Debug|x64.ActiveCfg = Debug|x64
+		{AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57}.Debug|x64.Build.0 = Debug|x64
+		{AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57}.Release|Win32.ActiveCfg = Release|x64
+		{AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57}.Release|Win32.Build.0 = Release|x64
+		{AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57}.Release|x64.ActiveCfg = Release|x64
+		{AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -180,6 +207,9 @@ Global
 		{84E23F52-4D61-4BB2-A3D5-47DA69703B4F} = {460EB508-0918-4B50-BA81-4243DB6191A2}
 		{002FE778-3D13-49AC-A796-950A04C95585} = {84E23F52-4D61-4BB2-A3D5-47DA69703B4F}
 		{1EEE6DE2-7453-48F7-8832-55545F31BC7B} = {84E23F52-4D61-4BB2-A3D5-47DA69703B4F}
+		{76C3E197-C212-4438-A794-A36110615344} = {D7E0538C-F90D-4BA9-BEC2-598EFBECC249}
+		{AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57} = {D7E0538C-F90D-4BA9-BEC2-598EFBECC249}
+		{C9C2212B-54A0-481D-BD99-5D980C6AEBA7} = {8621D1C8-22AC-47F4-AB7D-2AB1173D35AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED6E849E-3386-473D-9E3E-BDDDD87D2960}

@@ -21,7 +21,10 @@
 *  Страница свойств для построения документации решения.
 *  
 * \pre
-*  Требует для работы подключения проектов Version и Documentation из Alicorn.
+*  - Требует для работы подключения проектов Version и Documentation из Alicorn.
+*  - Документация генерируется в папку 
+*  "$(SolutionDir)Solution\Solution\(Documentation)\html", которая должна быть
+*  настроена как свойство svn:externals на HEAD ревизию.
 *  
 *  Для использования подключить к проекту BuildAll (конфигурации, которая будет 
 *  собираться последней); страница свойств должна быть подключена самой 
@@ -56,7 +59,7 @@
 *  Лицензия
 *  --------
 *  
-* \include "Solution\(Documentation)\License.txt"
+*  [Boost Software License](http://www.boost.org/LICENSE_1_0.txt)
 *
 *  Автор(ы)
 *  --------
