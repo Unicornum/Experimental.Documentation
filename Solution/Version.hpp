@@ -1,4 +1,4 @@
-﻿
+
 #pragma once
 
 /**
@@ -13,16 +13,16 @@
 #define SUBSUBVERSION 1
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 396
+#define REVISION_SOLUTION 399
 
 // Устанавливается автоматически
 #define __PLATFORM__ x64
 
 // Устанавливается автоматически
-#define TIME "13:01"
+#define TIME "21:14"
 
 // Устанавливается автоматически
-#define DAY 06
+#define DAY 07
 
 // Устанавливается автоматически
 #define MONTH 06
@@ -40,6 +40,6 @@
 
 #define __APPLICATION_NAME__ "Unknown application"
 
-#define __PRODUCT_DESCRIPTION__ "Sample documentation solution architecture."
+#define __PRODUCT_DESCRIPTION__ "Пример структуры документации решения."
 
 #define __FILE_NAME__ ""
