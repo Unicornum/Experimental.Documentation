@@ -66,20 +66,20 @@ img#id_screenshot:hover{
 *
 * \htmlonly
 
-<img id="img1" class="myImg" src="ScreenShot.png">
-<img id="img2" class="myImg" src="ScreenShot.png">
+<img class="PreviewImage" src="ScreenShot.png">
+<img class="PreviewImage" src="ScreenShot.png">
 
 <style>
 
-.myImg {
+.PreviewImage {
   width:100%;
   max-width:250px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.myImg:hover {
+.PreviewImage:hover {
   opacity: 0.7;
 }
 
@@ -149,33 +149,32 @@ img#id_screenshot:hover{
 }
 </style>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+<!-- Окно предварительного просмотра -->
+<div id="PreviewWindow" class="modal">
   <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
+  <img class="modal-content" id="FullSizeImage">
 </div>
 
 <script>
 
-function OnImageClick()
+// Для всех изображений...
+var Images = document.getElementsByClassName('PreviewImage');
+
+for (i = 0; i < Images.length; i++)
 {
-  document.getElementById('myModal').style.display = "block";
-  document.getElementById("img01").src = this.src;
+  Images[i].onclick = function()
+  {
+    document.getElementById('PreviewWindow').style.display = "block";
+    document.getElementById("FullSizeImage").src = this.src;
+  };
 }
 
-var img1 = document.getElementById('img1');
-img1.onclick = OnImageClick;
+// Для элемента, закрывающего окно предпросмотра...
+var Close = document.getElementsByClassName("close")[0];
 
-var img2 = document.getElementById('img2');
-img2.onclick = OnImageClick;
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() 
+Close.onclick = function()
 {
-  document.getElementById('myModal').style.display = "none";
+  document.getElementById('PreviewWindow').style.display = "none";
 }
 
 </script>
