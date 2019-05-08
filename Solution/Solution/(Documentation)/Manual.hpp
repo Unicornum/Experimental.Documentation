@@ -35,39 +35,107 @@
 *  Предварительный просмотр изображений
 *  ------------------------------------
 *  
-* ### Пример кликабельного превью
+* ### Открытие в новом окне
 *  
-* \htmlonly 
+* \htmlonly
+
+<!-- Отображение на той же странице -->
+<a href="ScreenShot.png"><img class="preview" src="ScreenShot.png"></a>
+
+<!-- Отображение на новой странице -->
+<a target="_blank" href="ScreenShot.png"><img class="preview" src="ScreenShot.png"></a>
+
+* \endhtmlonly
+* \copydoc Preview1Page
+*  
+* ### Открытие во всплывающем окне
+*
+* \htmlonly
+
+<img class="PreviewImage" src="ScreenShot.png">
+<img class="PreviewImage" src="ScreenShot.png">
+
+* \endhtmlonly
+* \copydoc Preview2Page
+*  
+*  Примеры описания классов/функций
+*  --------------------------------
+*
+*  ClassName
+*
+*  Пример формирования таблицы
+*  ---------------------------
+*
+* The following text **table** produces a full HTML table with its
+* first column centered, and the last column left aligned.
+*
+* | Return Code | Meaning                |
+* | :---------: | :--------------------- |
+* | 0           | Success 1              |
+* | ^           | Success 2              |
+* | 10          | Unexpected end-of-file |
+* | 20          | Communication error    |
+* | 30          | Invalid input          |
+*
+*  Ссылки
+*  ------
+*
+*  [Boost](http://www.boost.org/) \n
+*  <http://www.boost.org/> \n
+*  [Boost можно скачать здесь].
+*
+*  [Boost можно скачать здесь]: http://www.boost.org/ "Boost"
+*
+*  Блоки кода
+*  ----------
+
+~~~~~~~~~~~~~~~~~{.cpp}
+#pragma once
+~~~~~~~~~~~~~~~~~
+
+*  Checkbox'ы
+*  ----------
+*
+* - \checked Выполненное требование.
+* - \checked Выполненное требование.
+* - \checked Выполненное требование.
+* - \unchecked Не выполненное требование.
+*
+*  --------------
+*/
+
+/**
+* \page ScreenShotsPage ScreenShots
+*
+* \image html ".\Solution\(Documentation)\ScreenShot.png" "ScreenShot"
+*
+*/
+
+/**
+* \page Preview1Page
+* \htmlonly
 
 <style>
 
-img#id_screenshot {
+img.preview {
   border: 1px solid #ddd;
   border-radius: 10px;
   width: 250px;
 }
 
-img#id_screenshot:hover{
+img.preview:hover{
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   opacity: 0.7;
 }
 
 </style>
 
-<!-- Отображение на той же странице -->
-<a href="ScreenShot.png"><img id="id_screenshot" src="ScreenShot.png"></a>
-
-<!-- Отображение на новой странице -->
-<a target="_blank" href="ScreenShot.png"><img id="id_screenshot" src="ScreenShot.png"></a>
-
 * \endhtmlonly
-*  
-* ### Пример кликабельного превью
-*
-* \htmlonly
+*/
 
-<img class="PreviewImage" src="ScreenShot.png">
-<img class="PreviewImage" src="ScreenShot.png">
+/**
+* \page Preview2Page
+* \htmlonly
 
 <style>
 
@@ -84,17 +152,17 @@ img#id_screenshot:hover{
 }
 
 .modal{
-  display: none; 
-  position: fixed; 
-  z-index: 9999; 
-  padding-top: 100px; 
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 100px;
   left : 0;
   top : 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.9); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
 }
 
 .modal-content{
@@ -180,56 +248,4 @@ Close.onclick = function()
 </script>
 
 * \endhtmlonly
-*
-*  Примеры описания классов/функций
-*  --------------------------------
-*
-*  ClassName
-*
-*  Пример формирования таблицы
-*  ---------------------------
-*
-* The following text **table** produces a full HTML table with its
-* first column centered, and the last column left aligned.
-*
-* | Return Code | Meaning                |
-* | :---------: | :--------------------- |
-* | 0           | Success 1              |
-* | ^           | Success 2              |
-* | 10          | Unexpected end-of-file |
-* | 20          | Communication error    |
-* | 30          | Invalid input          |
-*
-*  Ссылки
-*  ------
-*
-*  [Boost](http://www.boost.org/) \n
-*  <http://www.boost.org/> \n
-*  [Boost можно скачать здесь].
-*
-*  [Boost можно скачать здесь]: http://www.boost.org/ "Boost"
-*
-*  Блоки кода
-*  ----------
-
-~~~~~~~~~~~~~~~~~{.cpp}
-#pragma once
-~~~~~~~~~~~~~~~~~
-
-*  Checkbox'ы
-*  ----------
-*
-* - \checked Выполненное требование.
-* - \checked Выполненное требование.
-* - \checked Выполненное требование.
-* - \unchecked Не выполненное требование.
-*
-*  --------------
-*/
-
-/**
-* \page ScreenShotsPage ScreenShots
-*
-* \image html ".\Solution\(Documentation)\ScreenShot.png" "ScreenShot"
-*
 */
