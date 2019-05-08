@@ -13,25 +13,25 @@
 #define SUBSUBVERSION 1
 
 // Устанавливается автоматически
-#define REVISION_SOLUTION 399
+#define REVISION_SOLUTION 401
 
 // Устанавливается автоматически
 #define __PLATFORM__ x64
 
 // Устанавливается автоматически
-#define TIME "21:14"
+#define TIME "13:07"
 
 // Устанавливается автоматически
-#define DAY 07
+#define DAY 08
 
 // Устанавливается автоматически
-#define MONTH 06
+#define MONTH 05
 
 // Устанавливается автоматически
-#define YEAR 2018
+#define YEAR 2019
 
 // Текущий год устанавливается автоматически
-#define __COPYRIGHT_STR__ "© UnicornumVerum 2015 - 2018 (unicornum.verum@gmail.ru)"
+#define __COPYRIGHT_STR__ "© UnicornumVerum 2015 - 2019 (unicornum.verum@gmail.ru)"
 
 #define __COMPANY_NAME__ "UnicornumVerum"
 
