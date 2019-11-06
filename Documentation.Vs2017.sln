@@ -102,6 +102,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doxygen", "Doxygen", "{C9C2212B-54A0-481D-BD99-5D980C6AEBA7}"
 	ProjectSection(SolutionItems) = preProject
 		Solution\Solution\Externals\Utilities\Doxygen\doxygen.css = Solution\Solution\Externals\Utilities\Doxygen\doxygen.css
+		Solution\Solution\Externals\Utilities\Doxygen\header.html = Solution\Solution\Externals\Utilities\Doxygen\header.html
 		Solution\Solution\Externals\Utilities\Doxygen\layout.xml = Solution\Solution\Externals\Utilities\Doxygen\layout.xml
 		Solution\Solution\Externals\Utilities\Doxygen\universal.doxygen = Solution\Solution\Externals\Utilities\Doxygen\universal.doxygen
 	EndProjectSection
