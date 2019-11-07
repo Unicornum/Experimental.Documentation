@@ -100,6 +100,12 @@
       <SubSystem>Console</SubSystem>
     </Link>
     <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>echo Warning: delete set VERSION_PRODUCT_NAME
+set VERSION_PRODUCT_NAME=Utilities.Documentation
+%(Command)
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
