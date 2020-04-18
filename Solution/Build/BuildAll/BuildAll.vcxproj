@@ -101,6 +101,14 @@
     </Link>
     <PostBuildEvent />
     <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>set UtilitiesDir=$(SolutionDir)Solution\Solution\Externals\Utilities
+set Zipper=%UtilitiesDir%\Compression\7zip\7z.exe
+
+%Zipper% a $(SolutionDir)Common.for.backup.7z "$(SolutionDir)Solution\Solution\(Documentation)\Common\*.hpp"
+
+%(Command)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
