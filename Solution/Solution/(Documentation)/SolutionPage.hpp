@@ -36,7 +36,7 @@
 *  
 * \subpage CodeStylePage
 *
-* \subpage ExternalsPage
+* \copydoc ExternalsPage
 *
 *  ---------------------------------------------------------------------------
 */

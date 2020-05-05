@@ -110,6 +110,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doxygen", "Doxygen", "{C9C2
 		Solution\Solution\Externals\Utilities\Doxygen\universal.doxygen = Solution\Solution\Externals\Utilities\Doxygen\universal.doxygen
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8C050852-0AFA-4078-86F9-437D0CCFCACA}"
+	ProjectSection(SolutionItems) = preProject
+		Solution\Solution\(Documentation)\Common\Solution.build.hpp = Solution\Solution\(Documentation)\Common\Solution.build.hpp
+		Solution\Solution\(Documentation)\Common\Solution.codestyle.hpp = Solution\Solution\(Documentation)\Common\Solution.codestyle.hpp
+		Solution\Solution\(Documentation)\Common\Solution.coverage.hpp = Solution\Solution\(Documentation)\Common\Solution.coverage.hpp
+		Solution\Solution\(Documentation)\Common\Solution.coverage.missed.hpp = Solution\Solution\(Documentation)\Common\Solution.coverage.missed.hpp
+		Solution\Solution\(Documentation)\Common\Solution.cppcheck.hpp = Solution\Solution\(Documentation)\Common\Solution.cppcheck.hpp
+		Solution\Solution\(Documentation)\Common\Solution.documentation.hpp = Solution\Solution\(Documentation)\Common\Solution.documentation.hpp
+		Solution\Solution\(Documentation)\Common\Solution.externals.hpp = Solution\Solution\(Documentation)\Common\Solution.externals.hpp
+		Solution\Solution\(Documentation)\Common\Solution.info.hpp = Solution\Solution\(Documentation)\Common\Solution.info.hpp
+		Solution\Solution\(Documentation)\Common\Solution.metrics.hpp = Solution\Solution\(Documentation)\Common\Solution.metrics.hpp
+		Solution\Solution\(Documentation)\Common\Solution.metrics.warning.hpp = Solution\Solution\(Documentation)\Common\Solution.metrics.warning.hpp
+		Solution\Solution\(Documentation)\Common\Solution.tests.hpp = Solution\Solution\(Documentation)\Common\Solution.tests.hpp
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -214,6 +229,7 @@ Global
 		{76C3E197-C212-4438-A794-A36110615344} = {D7E0538C-F90D-4BA9-BEC2-598EFBECC249}
 		{AFAEDCA2-A3C6-4FC3-A972-525CD8E75A57} = {D7E0538C-F90D-4BA9-BEC2-598EFBECC249}
 		{C9C2212B-54A0-481D-BD99-5D980C6AEBA7} = {8621D1C8-22AC-47F4-AB7D-2AB1173D35AB}
+		{8C050852-0AFA-4078-86F9-437D0CCFCACA} = {88F76559-08F8-455C-996D-40854423D83E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED6E849E-3386-473D-9E3E-BDDDD87D2960}
