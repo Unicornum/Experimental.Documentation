@@ -23,6 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Documentation)", "(Documen
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{4B9465B9-093F-4EF8-B9B7-67107C3B38DF}"
 	ProjectSection(SolutionItems) = preProject
+		Doxyfile = Doxyfile
 		Solution\Version.hpp = Solution\Version.hpp
 	EndProjectSection
 EndProject
