@@ -1,88 +1,68 @@
 
 /**
-* \mainpage Используемые библиотеки/утилиты
+* \mainpage notitle
 *  
-*  Используемые внешние библиотеки
-*  ===============================
-*
-*  Библиотеки общего назначения
-*  ----------------------------
-*  Используются внутри собственных библиотек и экпортируются во все внешние
-*  проекты.
-*
-*  - [Boost]
-*  - [Poco]
-*  - [Utf8cpp]
-*  - [Date]
-*  - [CrystaX]
-*
-*  GUI
-*  -----
-*
-*  - [wxWidgets]
-*  - [libRocket]
-*
-*  Тестирование
-*  ------------
-*
-*  - [Google Test]
-*  - [Google Mock]
-*
-*  Внутренние библиотеки
-*  ---------------------
-*  Используются для обеспечения выполнения внутренней логики работы собственных
-*  библиотек, но в остальные проекты не экспортируются.
-*
-*  - [Snappy]
-*  - [Crypto++]
-*  - [RapidXml]
-*  - [Freetype]
-*  - [FreeImage]
-*
-*  Используемые программы
-*  ======================
-*  Сторонние вспомогательные утилиты.
-*
-*  - [7Zip]
-*  - [CUrl]
-*  - [AStyle]
-*  - [Doxygen]
-*  - [CppCheck]
-*  - [Graphviz]
-*  - [TortoiseSVN]
-*  - [SourceMonitor]
-*  - [OpenCppCoverage]
-*  - [Visual Leak Detector]
+*  Описание решения
+*  ================
 *  
-*  Построение библиотек
-*  ====================
+* ### Назначение решения
 *  
-* \subpage ExternalsWindowsPage
+*  - Образец структуры документации решения.
+*  - Проверка результата работы новых версий Doxygen.
+*  - Тестирование построения документации при сборке скриптом.
 *  
-* \subpage ExternalsAndroidPage
+*  Подробное описание решения
+*  --------------------------
+*  
+*  - В разделе \b Manual приведены примеры форматирования текста.
+*  
+* ### Documentation.props
+*  
+*  Страница свойств для построения документации решения.
+*  
+* \pre
+*  - Требует для работы подключения проектов Version и Documentation из Alicorn.
+*  - Документация генерируется в папку 
+*  "$(SolutionDir)Solution\Solution\(Documentation)\html", которая должна быть
+*  настроена как свойство svn:externals на HEAD ревизию.
+*  
+*  Для использования подключить к проекту BuildAll (конфигурации, которая будет 
+*  собираться последней); страница свойств должна быть подключена самой 
+*  последней (на самом верху), чтобы генерация документации производилась после 
+*  всех остальных действий.
+*  
+*  Выполняет действия:
+*  - Обновляет файл версии решения.
+*  - Устанавливает переменные окружения, необходимые для генерации документации.
+*  - Удаляет файлы предыдущей собранной документации.
+*  - Генерирует новую документацию.
+*  - Фиксирует новую документацию в системе контроля версий.
+*  
+* ### Специально допущенные ошибки для проверки записей в логе
+*  
+*  -# Project4 содержит папку Documentation, а не (Documentation).
+*  -# Ссылки на не существующие разделы \b Part2Page, \b Project2Page.
+* 
+*  \n
+*  ---------------------------------------------------------------------------
+*  
+* \subpage ManualPage
+*  
+* \subpage DownloadsPage
+*  
+* \subpage HistoryPage
+*  
+* \subpage SolutionPage
 *
-*  [Boost]: http://www.boost.org/ "Boost main page"
-*  [Poco]: http://pocoproject.org/ "Poco main page"
-*  [wxWidgets]: https://www.wxwidgets.org/ "wxWidgets main page"
-*  [Google Test]: https://github.com/google/googletest "Google Test on GitHub"
-*  [Google Mock]: https://github.com/google/googlemock "Google Test on GitHub"
-*  [Utf8cpp]: http://utfcpp.sourceforge.net/ "Utf8cpp main page"
-*  [AStyle]: http://astyle.sourceforge.net/ "AStyle main page"
-*  [7Zip]: http://www.7-zip.org/ "7Zip main page"
-*  [Graphviz]: http://www.graphviz.org/ "Graphviz main page"
-*  [Doxygen]: http://www.stack.nl/~dimitri/doxygen/ "Doxygen main page"
-*  [Visual Leak Detector]: https://vld.codeplex.com/ "Visual Leak Detector main page"
-*  [Snappy]: https://github.com/google/snappy "Snappy on GitHub"
-*  [Crypto++]: https://www.cryptopp.com/ "Cryptopp main page"
-*  [RapidXml]: http://rapidxml.sourceforge.net/ "RapidXml main page"
-*  [OpenCppCoverage]: https://opencppcoverage.codeplex.com/ "OpenCppCoverage main page"
-*  [TortoiseSVN]: https://tortoisesvn.net/ "TortoiseSVN main page"
-*  [CppCheck]: http://cppcheck.sourceforge.net/ "CppCheck main page"
-*  [CrystaX]: https://www.crystax.net/ru "CrystaX main page"
-*  [libRocket]: https://github.com/libRocket "libRocket github page"
-*  [Freetype]: https://www.freetype.org/ "Freetype main page"
-*  [CUrl]: https://curl.haxx.se/ "CUrl main page"
-*  [Date]: https://github.com/HowardHinnant/date "Date github page"
-*  [FreeImage]: http://freeimage.sourceforge.net/ "FreeImage page"
-*  [SourceMonitor]: http://www.campwoodsw.com/sourcemonitor.html "SourceMonitor page"
+* \subpage RequirementsPage
+*  
+*  Лицензия
+*  --------
+*  
+*  [Boost Software License](http://www.boost.org/LICENSE_1_0.txt)
+*
+*  Автор(ы)
+*  --------
+*  
+* \copyrightsolution
 */
