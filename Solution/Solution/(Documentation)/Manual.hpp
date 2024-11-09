@@ -40,7 +40,7 @@
 * \htmlonly
 
 <!-- Отображение на той же странице -->
-<a href="ScreenShot.png"><img class="preview" src="ScreenShot.png"></a>
+<a href="ScreenShot.png"><img class="preview" src="Solution/Solution/(Documentation)/ScreenShot.png"></a>
 
 <!-- Отображение на новой странице -->
 <a target="_blank" href="ScreenShot.png"><img class="preview" src="ScreenShot.png"></a>
