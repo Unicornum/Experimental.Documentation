@@ -35,7 +35,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       # Install Doxygen
-      - name: Install Doxygen
+      - name: Install Doxygen default version
         run: sudo apt install doxygen && doxygen --version
       - name: Install Graphviz
         run: sudo apt install graphviz
