@@ -1,6 +1,0 @@
-[submodule "Solution/Solution/Externals"]
-	path = Solution/Solution/Externals
-	url = https://github.com/Unicornum/Properties.Utilities.git
-[submodule "Solution/Solution/(Documentation)/Common"]
-	path = Solution/Solution/(Documentation)/Common
-	url = https://github.com/Unicornum/Documentation.Common
