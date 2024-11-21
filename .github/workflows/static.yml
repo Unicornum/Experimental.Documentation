@@ -42,7 +42,10 @@ jobs:
         
       # Create documentation   
       - name: Create documentation     
-        run: doxygen
+        run: doxygen ./Solution/Solution/Externals/Utilities/Doxygen/universal.doxygen
+        
+        # Create documentation use Doxyfile from root
+        # run: doxygen
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
