@@ -1,37 +1,37 @@
 
 /**
-* \page SolutionPage Структура решения
+* \page SolutionPage Г‘ГІГ°ГіГЄГІГіГ°Г  Г°ГҐГёГҐГ­ГЁГї
 *  
 * \subpage SolutionStatisticsPage
 *  
 * \subpage SolutionTasksPage
 *  
-*  Общая структура решения
+*  ГЋГЎГ№Г Гї Г±ГІГ°ГіГЄГІГіГ°Г  Г°ГҐГёГҐГ­ГЁГї
 *  -----------------------
 *  
-* \include ".\Solution\(Documentation)\SolutionStruct.hpp"
+* \include "./Solution/(Documentation)/SolutionStruct.hpp"
 *  
-*  Ограничения и допущения
+*  ГЋГЈГ°Г Г­ГЁГ·ГҐГ­ГЁГї ГЁ Г¤Г®ГЇГіГ№ГҐГ­ГЁГї
 *  -----------------------
 *  
-*  - Раз.
-*  - Два.
-*  - Три.
+*  - ГђГ Г§.
+*  - Г„ГўГ .
+*  - Г’Г°ГЁ.
 *  
-*  Разделы решения
+*  ГђГ Г§Г¤ГҐГ«Г» Г°ГҐГёГҐГ­ГЁГї
 *  ---------------
 *  
-* ### Раздел 1
+* ### ГђГ Г§Г¤ГҐГ« 1
 *  
 * \copydoc Part1BriefPage
 *
-*  Страница раздела: \subpage Part1Page
+*  Г‘ГІГ°Г Г­ГЁГ¶Г  Г°Г Г§Г¤ГҐГ«Г : \subpage Part1Page
 *  
-* ### Раздел 2
+* ### ГђГ Г§Г¤ГҐГ« 2
 *  
-*  Страница раздела: \subpage Part2Page
+*  Г‘ГІГ°Г Г­ГЁГ¶Г  Г°Г Г§Г¤ГҐГ«Г : \subpage Part2Page
 *  
-*  Дополнительно
+*  Г„Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г®
 *  -------------
 *  
 * \subpage CodeStylePage
