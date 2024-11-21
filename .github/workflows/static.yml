@@ -40,12 +40,14 @@ jobs:
       - name: Install Graphviz
         run: sudo apt install graphviz
         
-      # Create documentation   
-      - name: Create documentation     
-        run: doxygen ./Solution/Solution/Externals/Utilities/Doxygen/universal.doxygen
+      # Create documentation
+      - name: Create documentation
+
+        # Так тоже работает, но пути внутри файла universal.doxygen должны задаваться относительно него самого
+        # run: doxygen ./Solution/Solution/Externals/Utilities/Doxygen/universal.doxygen
         
         # Create documentation use Doxyfile from root
-        # run: doxygen
+        run: doxygen
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
