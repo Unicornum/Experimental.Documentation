@@ -1,12 +1,12 @@
 
 /**
-* \page ExternalsPage Используемые библиотеки/утилиты
+* \page ExternalsPage Г€Г±ГЇГ®Г«ГјГ§ГіГҐГ¬Г»ГҐ ГЎГЁГЎГ«ГЁГ®ГІГҐГЄГЁ/ГіГІГЁГ«ГЁГІГ»
 *  
-* ### Версии SDK
+* ### Г‚ГҐГ°Г±ГЁГЁ SDK
 *
-* \include "Solution\SdkVersions.txt"
+* \include "./Solution/SdkVersions.txt"
 *  
-*  [Используемые утилиты](http://unicornum.github.io/Utilities/index.html)
+*  [Г€Г±ГЇГ®Г«ГјГ§ГіГҐГ¬Г»ГҐ ГіГІГЁГ«ГЁГІГ»](http://unicornum.github.io/Utilities/index.html)
 *  
-*  [Используемые библиотеки](http://unicornum.github.io/Externals/index.html)
+*  [Г€Г±ГЇГ®Г«ГјГ§ГіГҐГ¬Г»ГҐ ГЎГЁГЎГ«ГЁГ®ГІГҐГЄГЁ](http://unicornum.github.io/Externals/index.html)
 */
